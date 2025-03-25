@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter@Setter
 public class Product {
     @Id
-    private String id;
+    private String productId;
     private String name;
     private String description;
     private Double price;
