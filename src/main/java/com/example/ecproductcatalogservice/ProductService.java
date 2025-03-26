@@ -16,7 +16,7 @@ public class ProductService {
     }
 
     public Product getProductById(String id) {
-        return repository.findById(Integer.valueOf(id)).orElseThrow(() -> new RuntimeException("Product not found"));
+        return repository.findByProductId(id);
     }
 
     public Product createProduct(Product product) {
